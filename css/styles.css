@@ -1,0 +1,102 @@
+/*
+    3 selectors:
+    -Element name div, span, etc
+    -Class name .nameOfClasee
+    -Id #nameOfId
+    *{} to tag all elements
+    id>class>element
+*/
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    font-size: 13px;
+    color: #4f545f;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: #55B3C5;
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+fieldset{
+    border: 2px dashed #dddddd;
+    margin: 20px;
+    padding: 20px;
+}
+
+legend{
+    font-size: 1.3em;
+    font-weight: 900;
+}
+label{
+    display: block;
+}
+
+fieldset > span{
+    border: 1px solid #6278B0;
+    color: #42579C;
+    padding: 20px 40px;
+    display: block;
+    background: url('./../images/infoicon.png') no-repeat center left #CCE9F8;
+    background-position: 15px 15px;
+}
+
+.formElement{
+    padding: 5px 10px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+#cancelForm, #submitForm{
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #D9534F;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 5px;
+}
+
+#submitForm{
+    background-color: #56C56F;
+}
+
+#submitForm:hover{
+    cursor: pointer;
+    background-color: #88e29d;
+}
+
+#cancelForm:hover{
+    cursor: pointer;
+    background-color: #df706c;
+}
+/*not commonly used, use clases*/
+label[for="userPasswordConfirmation"]{
+    color: blue;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 20px;
+    background-color: rgb(161, 161, 161);
+    color: white;
+
+}
+
+.menu > li{
+
+    margin-right: 20px;
+}
+
+.menu > li:hover{
+    cursor: pointer;
+    background-color: gray;
+}
