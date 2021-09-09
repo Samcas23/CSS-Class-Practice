@@ -100,3 +100,33 @@ label[for="userPasswordConfirmation"]{
     cursor: pointer;
     background-color: gray;
 }
+
+/*  
+
+position: fixed absolute relative
+
+*/
+
+h1{
+    position: fixed;
+    width: 100%;
+    /*
+    moves the thing-px separates from the border <-top right left
+    */
+}
+
+nav{
+    padding-top: 80px;
+}
+
+fieldset{
+    position: relative;
+    /*  height: 200px;
+    overflow: auto;*/
+}
+
+span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
