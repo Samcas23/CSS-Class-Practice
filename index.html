@@ -20,48 +20,51 @@
 			</ul>	
 		</nav>
 		<main>
-			<fieldset>
-				<legend>
-					New account registry
-				</legend>
-				<span> Your information is safe with us </span>
-				<div>
-					<label for="userName" >Complete name</label>
-					<input id="userName" name="userName" class="formElement" type="text" /> 
-				</div>
-				<div>
-					<label for="userEmail">Email</label>
-					<input id="userEmail" name="userEmail" class="formElement" type="text"/>
-				</div>
-				<div>
-					<label for="userPassword">Password</label>
-					<input id="userPassword" name="userPassword" class="formElement" type="password"/>
-				</div>
-				<div>
-					<label for="userPasswordConfirmation">Password Confirmation</label>
-					<input id="userPasswordConfirmation" name="userPasswordConfirmation" class="formElement" type="password"/>
-				</div>
-				<div>
-					<label for="userCountry">Country</label>
-					<select id="userCountry">
-						<option value="0"> Select a country... </option>
-						<option value="1"> Mexico </option>
-						<option value="2"> Costa Rica </option>
-						<option value="3"> Ecuador </option>
-					</select>
-				</div>
-				<div>
-					<label>Gender</label>
-					<input id="genderMasculine" type="radio" name="gender" value="M"/> Masculine
-					<input id="genderFeminine" type="radio" name="gender" value="F"/> Feminine
-				</div>
-				<input id="cancelForm" type="submit" value="Cancel"/>
-				<input id="submitForm" type="submit" value="Submit"/>
-			</fieldset>
+			<form>
+				<fieldset>
+					<legend>
+						New account registry
+					</legend>
+					<span> Your information is safe with us </span>
+					<div>
+						<label for="userName" >Complete name</label>
+						<input oninput="changeName(this)" id="userName" name="userName" class="formElement" type="text" /> 
+					</div>
+					<div>
+						<label for="userEmail">Email</label>
+						<input id="userEmail" name="userEmail" class="formElement" type="text"/>
+					</div>
+					<div>
+						<label for="userPassword">Password</label>
+						<input id="userPassword" name="userPassword" class="formElement" type="password"/>
+					</div>
+					<div>
+						<label for="userPasswordConfirmation">Password Confirmation</label>
+						<input id="userPasswordConfirmation" name="userPasswordConfirmation" class="formElement" type="password"/>
+					</div>
+					<div>
+						<label for="userCountry">Country</label>
+						<select id="userCountry" onchange="countryChange(this)">
+							<option value="pleaseSelect"> Select a country... </option>
+							<option value="MX"> Mexico </option>
+							<option value="CR"> Costa Rica </option>
+							<option value="EC"> Ecuador </option>
+						</select>
+					</div>
+					<div>
+						<label>Gender</label>
+						<input id="genderMasculine" type="radio" name="gender" value="M"/> Masculine
+						<input id="genderFeminine" type="radio" name="gender" value="F"/> Feminine
+					</div>
+					<input id="cancelForm" type="submit" value="Cancel"/>
+					<input id="submitForm" type="submit" value="Submit"/>
+				</fieldset>
+			</form>
 		</main>
 		<footer>
 			Registry form
 		</footer>
+		<script src="./js/index.js"></script>
 	</body>	
 </html>
 
